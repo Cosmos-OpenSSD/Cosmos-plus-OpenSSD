@@ -67,8 +67,8 @@
 #include "nvme_admin_cmd.h"
 #include "nvme_io_cmd.h"
 
-#include "lru_buffer.h"
-#include "low_level_scheduler.h"
+#include "../lru_buffer.h"
+#include "../low_level_scheduler.h"
 
 volatile NVME_CONTEXT g_nvmeTask;
 

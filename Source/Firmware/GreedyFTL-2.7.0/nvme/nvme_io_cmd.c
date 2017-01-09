@@ -58,7 +58,7 @@
 #include "host_lld.h"
 #include "nvme_io_cmd.h"
 
-#include "lru_buffer.h"
+#include "../lru_buffer.h"
 
 void handle_nvme_io_read(unsigned int cmdSlotTag, NVME_IO_COMMAND *nvmeIOCmd)
 {
@@ -78,7 +78,7 @@ void handle_nvme_io_read(unsigned int cmdSlotTag, NVME_IO_COMMAND *nvmeIOCmd)
 	nlb = readInfo12.NLB;
 
 	ASSERT(startLba[0] < storageCapacity_L && (startLba[1] < STORAGE_CAPACITY_H || startLba[1] == 0));
-	ASSERT(nlb < MAX_NUM_OF_NLB);
+	//ASSERT(nlb < MAX_NUM_OF_NLB);
 	ASSERT((nvmeIOCmd->PRP1[0] & 0xF) == 0 && (nvmeIOCmd->PRP2[0] & 0xF) == 0); //error
 	ASSERT(nvmeIOCmd->PRP1[1] < 0x10 && nvmeIOCmd->PRP2[1] < 0x10);
 
@@ -111,7 +111,7 @@ void handle_nvme_io_write(unsigned int cmdSlotTag, NVME_IO_COMMAND *nvmeIOCmd)
 	nlb = writeInfo12.NLB;
 
 	ASSERT(startLba[0] < storageCapacity_L && (startLba[1] < STORAGE_CAPACITY_H || startLba[1] == 0));
-	ASSERT(nlb < MAX_NUM_OF_NLB);
+	//ASSERT(nlb < MAX_NUM_OF_NLB);
 	ASSERT((nvmeIOCmd->PRP1[0] & 0xF) == 0 && (nvmeIOCmd->PRP2[0] & 0xF) == 0);
 	ASSERT(nvmeIOCmd->PRP1[1] < 0x10 && nvmeIOCmd->PRP2[1] < 0x10);
 

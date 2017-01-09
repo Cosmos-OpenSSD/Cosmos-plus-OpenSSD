@@ -58,11 +58,11 @@
 #include "xscugic_hw.h"
 #include "xscugic.h"
 #include "xil_printf.h"
-#include "debug.h"
+#include "nvme/debug.h"
 
-#include "nvme.h"
-#include "nvme_main.h"
-#include "host_lld.h"
+#include "nvme/nvme.h"
+#include "nvme/nvme_main.h"
+#include "nvme/host_lld.h"
 
 
 XScuGic GicInstance;

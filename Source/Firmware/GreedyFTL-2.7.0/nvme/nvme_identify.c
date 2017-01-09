@@ -55,7 +55,7 @@
 
 #include "nvme.h"
 #include "nvme_identify.h"
-#include "init_ftl.h"
+#include "../init_ftl.h"
 
 void identify_controller(unsigned int pBuffer)
 {

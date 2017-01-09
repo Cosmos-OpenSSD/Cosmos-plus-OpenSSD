@@ -56,7 +56,7 @@
 #define PAGE_MAP_H_
 
 #include "init_ftl.h"
-#include "nvme.h"
+#include "nvme/nvme.h"
 #include "xil_printf.h"
 #include "internal_req.h"
 
