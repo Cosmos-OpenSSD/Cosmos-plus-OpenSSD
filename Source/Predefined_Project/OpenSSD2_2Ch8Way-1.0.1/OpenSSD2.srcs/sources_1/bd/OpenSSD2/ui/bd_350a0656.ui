@@ -1,0 +1,67 @@
+{
+   guistr: "# # String gsaved with Nlview 6.4.10  2014-10-02 bk=1.3207 VDI=35 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port S03_ACLK -pg 1 -y 720 -defaultsOSRD
+preplace port S02_AXI -pg 1 -y 490 -defaultsOSRD
+preplace port S00_AXI -pg 1 -y 50 -defaultsOSRD
+preplace port M00_ACLK -pg 1 -y 20 -defaultsOSRD
+preplace port ACLK -pg 1 -y 510 -defaultsOSRD
+preplace port M01_AXI -pg 1 -y 390 -defaultsOSRD
+preplace port S01_AXI -pg 1 -y 270 -defaultsOSRD
+preplace port S01_ACLK -pg 1 -y 330 -defaultsOSRD
+preplace port M01_ACLK -pg 1 -y 400 -defaultsOSRD
+preplace port S00_ACLK -pg 1 -y 140 -defaultsOSRD
+preplace port S03_AXI -pg 1 -y 660 -defaultsOSRD
+preplace port S02_ACLK -pg 1 -y 550 -defaultsOSRD
+preplace port M00_AXI -pg 1 -y 220 -defaultsOSRD
+preplace portBus S01_ARESETN -pg 1 -y 350 -defaultsOSRD
+preplace portBus M01_ARESETN -pg 1 -y 430 -defaultsOSRD
+preplace portBus ARESETN -pg 1 -y 530 -defaultsOSRD
+preplace portBus S00_ARESETN -pg 1 -y 160 -defaultsOSRD
+preplace portBus S02_ARESETN -pg 1 -y 570 -defaultsOSRD
+preplace portBus S03_ARESETN -pg 1 -y 740 -defaultsOSRD
+preplace portBus M00_ARESETN -pg 1 -y 210 -defaultsOSRD
+preplace inst m00_couplers|m00_data_fifo -pg 1 -lvl 1 -y 220 -defaultsOSRD
+preplace inst m00_couplers -pg 1 -lvl 3 -y 220 -regy -60 -defaultsOSRD
+preplace inst s01_couplers -pg 1 -lvl 1 -y 310 -defaultsOSRD
+preplace inst s02_couplers -pg 1 -lvl 1 -y 530 -defaultsOSRD
+preplace inst s00_couplers -pg 1 -lvl 1 -y 90 -defaultsOSRD
+preplace inst m01_couplers -pg 1 -lvl 3 -y 410 -defaultsOSRD
+preplace inst m00_couplers|auto_pc -pg 1 -lvl 2 -y 240 -defaultsOSRD
+preplace inst xbar -pg 1 -lvl 2 -y 340 -defaultsOSRD
+preplace inst s03_couplers -pg 1 -lvl 1 -y 700 -defaultsOSRD
+preplace netloc S01_ACLK_1 1 0 1 N
+preplace netloc m00_couplers|m00_data_fifo_to_auto_pc 1 1 1 N
+preplace netloc m00_couplers|auto_pc_to_m00_couplers 1 2 1 N
+preplace netloc S03_ARESETN_1 1 0 1 N
+preplace netloc xbar_to_m00_couplers 1 2 1 730
+preplace netloc S03_ACLK_1 1 0 1 N
+preplace netloc S02_ACLK_1 1 0 1 N
+preplace netloc S00_ACLK_1 1 0 1 180
+preplace netloc m00_couplers_to_HPIC0 1 3 1 1480
+preplace netloc HPIC0_to_s01_couplers 1 0 1 N
+preplace netloc m00_couplers|S_ARESETN_1 1 0 2 930 300 1120
+preplace netloc m01_couplers_to_HPIC0 1 3 1 1480
+preplace netloc S01_ARESETN_1 1 0 1 N
+preplace netloc xbar_to_m01_couplers 1 2 1 730
+preplace netloc HPIC0_to_s02_couplers 1 0 1 N
+preplace netloc s01_couplers_to_xbar 1 1 1 N
+preplace netloc HPIC0_to_s00_couplers 1 0 1 N
+preplace netloc S02_ARESETN_1 1 0 1 N
+preplace netloc m00_couplers|S_ACLK_1 1 0 2 920 290 1110
+preplace netloc s03_couplers_to_xbar 1 1 1 470
+preplace netloc HPIC0_to_s03_couplers 1 0 1 N
+preplace netloc s00_couplers_to_xbar 1 1 1 490
+preplace netloc M00_ARESETN_1 1 0 3 NJ 210 NJ 210 750
+preplace netloc HPIC0_ACLK_net 1 0 3 190 180 480 240 740
+preplace netloc m00_couplers|m00_couplers_to_m00_data_fifo 1 0 1 N
+preplace netloc s02_couplers_to_xbar 1 1 1 460
+preplace netloc M01_ACLK_1 1 0 3 NJ 410 NJ 450 750
+preplace netloc M00_ACLK_1 1 0 3 NJ 190 NJ 190 760
+preplace netloc HPIC0_ARESETN_net 1 0 3 200 400 490 440 760
+preplace netloc M01_ARESETN_1 1 0 3 NJ 430 NJ 460 770
+preplace netloc S00_ARESETN_1 1 0 1 220
+levelinfo -pg 1 160 330 610 1160 1500
+levelinfo -hier m00_couplers 900 1020 1250 1410
+",
+}
