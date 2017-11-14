@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2014.4.1 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="2" Path="I:/Projects/OpenSSD2_2Ch8Way-1.0.2/OpenSSD2.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="2c98ca3a8d5a43389350c849d8180b41"/>
+    <Option Name="Part" Val="xc7z045ffg900-3"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="BoardPart" Val=""/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPRepoPath" Val="C:/OpenSSD/IPRepo"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/bd/OpenSSD2/OpenSSD2.bd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_proc_sys_reset_0_0/OpenSSD2_proc_sys_reset_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_xbar_0/OpenSSD2_xbar_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_axi_interconnect_0_0/OpenSSD2_axi_interconnect_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_V2NFC100DDR_0_0/OpenSSD2_V2NFC100DDR_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_processing_system7_0_0/OpenSSD2_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_xbar_1/OpenSSD2_xbar_1.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_axi_interconnect_0_3/OpenSSD2_axi_interconnect_0_3.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_Dispatcher_uCode_0_0/OpenSSD2_Dispatcher_uCode_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_axi_interconnect_0_2/OpenSSD2_axi_interconnect_0_2.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_axi_interconnect_0_1/OpenSSD2_axi_interconnect_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_NVMeHostController_0_0/OpenSSD2_NVMeHostController_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_proc_sys_reset_3_0/OpenSSD2_proc_sys_reset_3_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_Tiger4SharedKES_0_0/OpenSSD2_Tiger4SharedKES_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_Tiger4NSC_0_0/OpenSSD2_Tiger4NSC_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_blk_mem_gen_0_0/OpenSSD2_blk_mem_gen_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_Tiger4NSC_1_0/OpenSSD2_Tiger4NSC_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_clk_wiz_0_0/OpenSSD2_clk_wiz_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_V2NFC100DDR_1_0/OpenSSD2_V2NFC100DDR_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_proc_sys_reset_2_0/OpenSSD2_proc_sys_reset_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="hdl/OpenSSD2.v"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_s01_regslice_0/OpenSSD2_s01_regslice_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_auto_us_cc_df_1/OpenSSD2_auto_us_cc_df_1.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_auto_us_cc_df_0/OpenSSD2_auto_us_cc_df_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_auto_pc_3/OpenSSD2_auto_pc_3.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_auto_pc_2/OpenSSD2_auto_pc_2.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_auto_pc_1/OpenSSD2_auto_pc_1.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_auto_pc_0/OpenSSD2_auto_pc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_m00_regslice_0/OpenSSD2_m00_regslice_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_m00_data_fifo_0/OpenSSD2_m00_data_fifo_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="ip/OpenSSD2_s00_regslice_0/OpenSSD2_s00_regslice_0.xci"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="OpenSSD2_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="hw_handoff/OpenSSD2_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="OpenSSD2.bd" FileRelPathName="hw_handoff/OpenSSD2.hwh"/>
+      </File>
+      <File Path="$PSRCDIR/sources_1/uProgROM_v2.0.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="OpenSSD2"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="SimMode" Val="post-implementation"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="synthesis" Type="Constrs" RelSrcDir="$PSRCDIR/synthesis">
+      <Config>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="implementation" Type="Constrs" RelSrcDir="$PSRCDIR/implementation">
+      <File Path="$PSRCDIR/constrs_1/implementation/constr_nand_ch01.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/implementation/constr_nvme.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch0.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch1.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch2.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch3.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/implementation/pinmap_others.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/implementation/constr_others.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch4.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch5.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch6.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch7.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/implementation/constr_others.xdc"/>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="QuestaSim/ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="IES">
+      <Option Name="Description" Val="Incisive Enterprise Simulator (IES)"/>
+    </Simulator>
+    <Simulator Name="VCS">
+      <Option Name="Description" Val="Verilog Compiler Simulator (VCS)"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="9">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z045ffg900-3" ConstrsSet="synthesis" Description="Vivado Synthesis Defaults" State="current">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z045ffg900-3" ConstrsSet="implementation" Description="Similar to Peformance_Explore, but enables the physical optimization step (phys_opt_design) with the Explore directive after routing." State="current" SynthRun="synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Performance_ExplorePostRoutePhysOpt" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design">
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design">
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1">
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="route_design">
+          <Option Id="MoreOptsStr"><![CDATA[-tns_cleanup]]></Option>
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="post_route_phys_opt_design" EnableStepBool="1">
+          <Option Id="Directive">0</Option>
+        </Step>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+  </Runs>
+  <HWSession Dir="hw_1" File="hw.xml"/>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="Common 17-55"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="16"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+  </MsgRule>
+</Project>
