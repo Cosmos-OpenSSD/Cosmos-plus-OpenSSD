@@ -249,12 +249,17 @@ void ReqTransSliceToLowLevel()
 			dataBufMapPtr->dataBuf[dataBufEntry].logicalSliceAddr = reqPoolPtr->reqPool[reqSlotTag].logicalSliceAddr;
 			PutToDataBufHashList(dataBufEntry);
 
+			/*
+			@pjh : 
+			*/
+
 			if(reqPoolPtr->reqPool[reqSlotTag].reqCode  == REQ_CODE_READ)
 				DataReadFromNand(reqSlotTag);
 			else if(reqPoolPtr->reqPool[reqSlotTag].reqCode  == REQ_CODE_WRITE)
 				if(reqPoolPtr->reqPool[reqSlotTag].nvmeDmaInfo.numOfNvmeBlock != NVME_BLOCKS_PER_SLICE) //for read modify write
 					DataReadFromNand(reqSlotTag);
 		}
+
 
 		//transform this slice request to nvme request
 		if(reqPoolPtr->reqPool[reqSlotTag].reqCode  == REQ_CODE_WRITE)
