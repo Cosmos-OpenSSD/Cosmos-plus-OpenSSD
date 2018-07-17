@@ -81,13 +81,15 @@ void nvme_main()
 	xil_printf("\r\nFTL reset complete!!! \r\n");
 	xil_printf("Turn on the host PC \r\n");
 
-	while(1)
+	while(1)   // monitoring status of nvmeTask
 	{
 		exeLlr = 1;
 
 		if(g_nvmeTask.status == NVME_TASK_WAIT_CC_EN)
 		{
 			unsigned int ccEn;
+
+			// ccEn: cache Enable ?
 			ccEn = check_nvme_cc_en();
 			if(ccEn == 1)
 			{
@@ -127,6 +129,7 @@ void nvme_main()
 				unsigned int qID;
 				set_nvme_csts_shst(1);
 
+				// MAX 8 queue (0 for admin command)
 				for(qID = 0; qID < 8; qID++)
 				{
 					set_io_cq(qID, 0, 0, 0, 0, 0, 0);

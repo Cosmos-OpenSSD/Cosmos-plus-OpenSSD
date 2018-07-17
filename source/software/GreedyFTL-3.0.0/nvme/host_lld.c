@@ -63,6 +63,16 @@ extern NVME_CONTEXT g_nvmeTask;
 HOST_DMA_STATUS g_hostDmaStatus;
 HOST_DMA_ASSIST_STATUS g_hostDmaAssistStatus;
 
+
+// host_lld : host low level driver?
+
+
+/*
+ * IRQ: Interrupt Request Queue
+ * IRQ mgmt
+ *   - dev_irq_init()    ; 
+ *   - dev_irq_handler() ; 
+ */
 void dev_irq_init()
 {
 	DEV_IRQ_REG devReg;
@@ -215,6 +225,7 @@ void set_nvme_admin_queue(unsigned int sqValid, unsigned int cqValid, unsigned i
 }
 
 
+// get nvme command: read from NVME_CMD_FIFO_REG_ADDR (fifo command queue ?)
 unsigned int get_nvme_cmd(unsigned short *qID, unsigned short *cmdSlotTag, unsigned int *cmdSeqNum, unsigned int *cmdDword)
 {
 	NVME_CMD_FIFO_REG nvmeReg;
@@ -294,6 +305,10 @@ void set_io_sq(unsigned int ioSqIdx, unsigned int valid, unsigned int cqVector, 
 	IO_WRITE32((addr + 4), nvmeReg.dword[1]);
 }
 
+// set IO command queue
+/*
+ * ioCqIdx (argument1) : usually queue ID
+ */
 void set_io_cq(unsigned int ioCqIdx, unsigned int valid, unsigned int irqEn, unsigned int irqVector, unsigned int qSzie, unsigned int pcieBaseAddrL, unsigned int pcieBaseAddrH)
 {
 	NVME_IO_CQ_SET_REG nvmeReg;
