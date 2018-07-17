@@ -51,6 +51,9 @@
 
 P_GC_VICTIM_MAP gcVictimMapPtr;
 
+/* 
+@ initialzie GC victim Mapping table
+*/
 void InitGcVictimMap()
 {
 	int dieNo, invalidSliceCnt;
@@ -67,7 +70,16 @@ void InitGcVictimMap()
 	}
 }
 
-
+/*
+@ perform garbage collection on *specific* die
+@ 1) select victim block number 
+@ 2) start for-loop in block 
+@ 3) check the page(slice) valid or not 
+@		* valid = (current virtual address) == (logical-to-virtual mapping)
+@ 4) find free block and then copy the valid page(slice)
+@ 5) erase victim block
+@[in] dieNo : Die number 
+*/
 void GarbageCollection(unsigned int dieNo)
 {
 	unsigned int victimBlockNo, pageNo, virtualSliceAddr, logicalSliceAddr, dieNoForGcCopy, reqSlotTag;
@@ -85,6 +97,8 @@ void GarbageCollection(unsigned int dieNo)
 			if(logicalSliceAddr != LSA_NONE)
 				if(logicalSliceMapPtr->logicalSlice[logicalSliceAddr].virtualSliceAddr ==  virtualSliceAddr) //valid data
 				{
+					//@pjh : copy-back ?
+					
 					//read
 					reqSlotTag = GetFromFreeReqQ();
 
@@ -149,6 +163,18 @@ void PutToGcVictimList(unsigned int dieNo, unsigned int blockNo, unsigned int in
 	}
 }
 
+/*
+@ get GC victim list on *specific* die
+@ 1) start for-loop in gcVictimList array.
+@ 2) check current slice's headBlock BLOCK_NONE (-> goto step3 ) or NOT (-> goto step1)
+@ 3) check eviction block's next block BLOCK_NONE or NOT
+@ 3-1) BLOCK_NONE  : set current block's head/tail to BLOCK_NONE
+@ 3-2) !BLOCK_NONE : remove current block in linked-list 
+@ 4) return evictedBlockNo
+@ (*) if there is no free block then abort and terminate SSD.
+@[in] 	unsigned int dieNo : Die number
+@[out] 	eviction block number 
+*/
 unsigned int GetFromGcVictimList(unsigned int dieNo)
 {
 	unsigned int evictedBlockNo;
