@@ -1,4 +1,4 @@
-# Cosmos-OpenSSD-plus
+# Cosmos-plus-OpenSSD
 Cosmos OpenSSD + Hardware and Software source distribution
 
 ---
